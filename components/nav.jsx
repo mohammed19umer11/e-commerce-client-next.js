@@ -12,7 +12,6 @@ import {
     IdentificationIcon,
     MenuAlt3Icon, 
     ShoppingCartIcon, 
-    SparklesIcon, 
     UserCircleIcon } from '@heroicons/react/outline';
 
 function classNames(...classes) {
@@ -47,7 +46,7 @@ export default function Nav() {
     return (
     <div className={"fixed w-full z-50"}>
     <nav className="h-16 bg-gradient-to-r from-primary-400 via-primary-300 to-primary-400">
-        <div className="max-w-6xl mx-auto px-4 h-full">
+        <div className="w-11/12 mx-auto h-full">
             <div className="flex items-center justify-between h-full">
                 <div className="flex items-center space-x-4">
                     <div className="flex items-center justify-between py-5 px-2 text-primary-0 font-bold">
@@ -66,7 +65,7 @@ export default function Nav() {
 
                 <div className="hidden md:flex items-center space-x-3 py-5 px-3 text-primary-0 font-bold">
                     <Link href="#"><ShoppingCartIcon className={"h-6 w-6"}/></Link>
-                    <Link href="#"><SparklesIcon className={"h-6 w-6"}/></Link>
+                    <Link href="#">SOMETHING ELSE/></Link>
                     <div className={"flex items-center relative"}>
                         <button onClick={toggleDropdown}><UserCircleIcon className={"h-6 w-6"}/></button>
                         <ul className={classNames(isOpenDropDown ? "block" : "hidden","absolute top-8 right-2 bg-primary-0 rounded text-primary-400")}>
@@ -101,8 +100,8 @@ export default function Nav() {
                 <Link href="#">CART</Link>
             </li>
             <li className={"flex items-center py-2 px-4 active:bg-primary-300"}>
-                <div className={"h-6 w-6 text-primary-0 mr-2"}><SparklesIcon /></div>
-                <Link href="#" className=" ">FEATURED</Link>
+                <div className={"h-6 w-6 text-primary-0 mr-2"}>SOMETHING ELESE</div>
+                <Link href="#" className=" ">SOMETHING ELSE</Link>
             </li>
             <li className={"flex flex-col py-2 px-4 active:bg-primary-300"}>
                 <div className={"flex pb-1 items-center content-center"}>

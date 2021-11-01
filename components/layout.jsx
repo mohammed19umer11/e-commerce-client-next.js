@@ -12,7 +12,7 @@ export default function Layout({children}){
         </Head>
         <Nav />
         <div className="pt-16 w-screen h-screen">
-            <main className="w-full h-full">
+            <main className="w-full h-full flex items-center justify-center">
                 {children}
             </main>
         </div>
